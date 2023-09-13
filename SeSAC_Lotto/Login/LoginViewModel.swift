@@ -30,4 +30,12 @@ final class LoginViewModel {
         
         isValid.value = true
     }
+
+    func testCode() {
+        name.value = "예스코치"
+        email.value = "abc@def"
+        password.value = "123456789"
+
+        checkValidation()
+    }
 }

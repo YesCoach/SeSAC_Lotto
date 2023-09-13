@@ -26,16 +26,18 @@ final class LoginViewController: UIViewController {
     private lazy var passwordTextField = UITextField().then {
         $0.placeholder = "비밀번호를 입력하세요"
         $0.textColor = .label
+        $0.isSecureTextEntry = true
         $0.addTarget(self, action: #selector(passwordTextFieldValueChanged(_:)), for: .editingChanged)
     }
 
     private lazy var loginButton = UIButton().then {
         $0.backgroundColor = .systemGreen
         $0.setTitle("로그인", for: .normal)
-        $0.setTitleColor(.label, for: .normal)
+        $0.setTitleColor(.white, for: .normal)
         $0.setTitleColor(.systemGray, for: .disabled)
         $0.layer.cornerRadius = 10.0
         $0.layer.masksToBounds = true
+        $0.addTarget(self, action: #selector(signInButtonTouched(_:)), for: .touchUpInside)
     }
 
     private let viewModel = LoginViewModel()
@@ -47,6 +49,7 @@ final class LoginViewController: UIViewController {
         configureUI()
         configureLayout()
         bindViewModel()
+        viewModel.testCode()
     }
 
 }
@@ -94,6 +97,21 @@ private extension LoginViewController {
             loginButton.isEnabled = $0
             loginButton.backgroundColor = $0 ? .systemGreen : .systemGray6
         }
+
+        viewModel.name.bind { [weak self] in
+            guard let self else { return }
+            nameTextField.text = $0
+        }
+
+        viewModel.email.bind { [weak self] in
+            guard let self else { return }
+            emailTextField.text = $0
+        }
+
+        viewModel.password.bind { [weak self] in
+            guard let self else { return }
+            passwordTextField.text = $0
+        }
     }
 
     // MARK: - Actions
@@ -115,7 +133,8 @@ private extension LoginViewController {
 
     @objc func signInButtonTouched(_ sender: UIButton) {
         if viewModel.isValid.value {
-
+            let viewController = LottoViewController()
+            present(viewController, animated: true)
         }
     }
 

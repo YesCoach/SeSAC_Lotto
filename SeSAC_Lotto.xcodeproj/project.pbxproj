@@ -16,6 +16,7 @@
 		895A217E2AB1904200173626 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 895A217D2AB1904200173626 /* SnapKit */; };
 		895A21802AB1A1BC00173626 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A217F2AB1A1BC00173626 /* LoginViewModel.swift */; };
 		895A21822AB1A23900173626 /* CustomObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A21812AB1A23900173626 /* CustomObservable.swift */; };
+		895A21862AB1A70100173626 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A21852AB1A70100173626 /* LottoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		895A21732AB18ED000173626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		895A217F2AB1A1BC00173626 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		895A21812AB1A23900173626 /* CustomObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomObservable.swift; sourceTree = "<group>"; };
+		895A21852AB1A70100173626 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +66,31 @@
 			children = (
 				895A21652AB18ECE00173626 /* AppDelegate.swift */,
 				895A21672AB18ECE00173626 /* SceneDelegate.swift */,
-				895A21692AB18ECE00173626 /* LoginViewController.swift */,
-				895A217F2AB1A1BC00173626 /* LoginViewModel.swift */,
+				895A21832AB1A6E500173626 /* Login */,
+				895A21842AB1A6ED00173626 /* Lotto */,
 				895A21812AB1A23900173626 /* CustomObservable.swift */,
 				895A216E2AB18ED000173626 /* Assets.xcassets */,
 				895A21702AB18ED000173626 /* LaunchScreen.storyboard */,
 				895A21732AB18ED000173626 /* Info.plist */,
 			);
 			path = SeSAC_Lotto;
+			sourceTree = "<group>";
+		};
+		895A21832AB1A6E500173626 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				895A21692AB18ECE00173626 /* LoginViewController.swift */,
+				895A217F2AB1A1BC00173626 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		895A21842AB1A6ED00173626 /* Lotto */ = {
+			isa = PBXGroup;
+			children = (
+				895A21852AB1A70100173626 /* LottoViewController.swift */,
+			);
+			path = Lotto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +174,7 @@
 				895A21802AB1A1BC00173626 /* LoginViewModel.swift in Sources */,
 				895A21822AB1A23900173626 /* CustomObservable.swift in Sources */,
 				895A216A2AB18ECE00173626 /* LoginViewController.swift in Sources */,
+				895A21862AB1A70100173626 /* LottoViewController.swift in Sources */,
 				895A21662AB18ECE00173626 /* AppDelegate.swift in Sources */,
 				895A21682AB18ECE00173626 /* SceneDelegate.swift in Sources */,
 			);
