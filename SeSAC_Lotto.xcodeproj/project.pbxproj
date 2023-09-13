@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		895A21662AB18ECE00173626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A21652AB18ECE00173626 /* AppDelegate.swift */; };
 		895A21682AB18ECE00173626 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A21672AB18ECE00173626 /* SceneDelegate.swift */; };
-		895A216A2AB18ECE00173626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A21692AB18ECE00173626 /* ViewController.swift */; };
+		895A216A2AB18ECE00173626 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A21692AB18ECE00173626 /* LoginViewController.swift */; };
 		895A216F2AB18ED000173626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895A216E2AB18ED000173626 /* Assets.xcassets */; };
 		895A21722AB18ED000173626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895A21702AB18ED000173626 /* LaunchScreen.storyboard */; };
+		895A217B2AB1903300173626 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 895A217A2AB1903300173626 /* Then */; };
+		895A217E2AB1904200173626 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 895A217D2AB1904200173626 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		895A21622AB18ECE00173626 /* SeSAC_Lotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_Lotto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		895A21652AB18ECE00173626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		895A21672AB18ECE00173626 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		895A21692AB18ECE00173626 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		895A21692AB18ECE00173626 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		895A216E2AB18ED000173626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		895A21712AB18ED000173626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		895A21732AB18ED000173626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895A217B2AB1903300173626 /* Then in Frameworks */,
+				895A217E2AB1904200173626 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +60,7 @@
 			children = (
 				895A21652AB18ECE00173626 /* AppDelegate.swift */,
 				895A21672AB18ECE00173626 /* SceneDelegate.swift */,
-				895A21692AB18ECE00173626 /* ViewController.swift */,
+				895A21692AB18ECE00173626 /* LoginViewController.swift */,
 				895A216E2AB18ED000173626 /* Assets.xcassets */,
 				895A21702AB18ED000173626 /* LaunchScreen.storyboard */,
 				895A21732AB18ED000173626 /* Info.plist */,
@@ -80,6 +84,10 @@
 			dependencies = (
 			);
 			name = SeSAC_Lotto;
+			packageProductDependencies = (
+				895A217A2AB1903300173626 /* Then */,
+				895A217D2AB1904200173626 /* SnapKit */,
+			);
 			productName = SeSAC_Lotto;
 			productReference = 895A21622AB18ECE00173626 /* SeSAC_Lotto.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +116,10 @@
 				Base,
 			);
 			mainGroup = 895A21592AB18ECE00173626;
+			packageReferences = (
+				895A21792AB1903300173626 /* XCRemoteSwiftPackageReference "Then" */,
+				895A217C2AB1904200173626 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 895A21632AB18ECE00173626 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				895A216A2AB18ECE00173626 /* ViewController.swift in Sources */,
+				895A216A2AB18ECE00173626 /* LoginViewController.swift in Sources */,
 				895A21662AB18ECE00173626 /* AppDelegate.swift in Sources */,
 				895A21682AB18ECE00173626 /* SceneDelegate.swift in Sources */,
 			);
@@ -344,6 +356,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		895A21792AB1903300173626 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		895A217C2AB1904200173626 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		895A217A2AB1903300173626 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 895A21792AB1903300173626 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		895A217D2AB1904200173626 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 895A217C2AB1904200173626 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 895A215A2AB18ECE00173626 /* Project object */;
 }
